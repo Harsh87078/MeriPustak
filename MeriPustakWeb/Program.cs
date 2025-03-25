@@ -1,7 +1,20 @@
+using MeriPustak.DataAccess.Data;
+using MeriPustak.DataAccesss.Repository;
+using MeriPustak.DataAccesss.Repository.IRepository;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+var connectionString = builder.Configuration.GetConnectionString("dbcs");
+builder.Services.AddDbContext<MeriPustakDbContext>(options =>
+{
+    options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
+});
+
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
 var app = builder.Build();
 
@@ -22,6 +35,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{area=Customer}/{controller=Home}/{action=Index}/{id?}");
 
 app.Run();

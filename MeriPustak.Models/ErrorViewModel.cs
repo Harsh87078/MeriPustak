@@ -1,4 +1,4 @@
-namespace MeriPustakWeb.Models
+namespace MeriPustak.Models
 {
     public class ErrorViewModel
     {

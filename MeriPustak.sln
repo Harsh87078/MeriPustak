@@ -1,9 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35825.156 d17.13
+VisualStudioVersion = 17.13.35825.156
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeriPustakWeb", "MeriPustakWeb\MeriPustakWeb.csproj", "{9ACB9A22-6079-41AD-9474-4BBC3A99808A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeriPustak.DataAccesss", "MeriPustak.DataAccesss\MeriPustak.DataAccesss.csproj", "{1F0DC646-46A4-4188-B8A0-4B940A10B8C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeriPustak.Models", "MeriPustak.Models\MeriPustak.Models.csproj", "{7468F361-E478-4A61-ACC0-BD6B0D6FE814}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeriPustak.Utility", "MeriPustak.Utility\MeriPustak.Utility.csproj", "{24A635F4-0FDA-4065-99A2-212EAC0CDDF1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{9ACB9A22-6079-41AD-9474-4BBC3A99808A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9ACB9A22-6079-41AD-9474-4BBC3A99808A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9ACB9A22-6079-41AD-9474-4BBC3A99808A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F0DC646-46A4-4188-B8A0-4B940A10B8C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F0DC646-46A4-4188-B8A0-4B940A10B8C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F0DC646-46A4-4188-B8A0-4B940A10B8C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F0DC646-46A4-4188-B8A0-4B940A10B8C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7468F361-E478-4A61-ACC0-BD6B0D6FE814}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7468F361-E478-4A61-ACC0-BD6B0D6FE814}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7468F361-E478-4A61-ACC0-BD6B0D6FE814}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7468F361-E478-4A61-ACC0-BD6B0D6FE814}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24A635F4-0FDA-4065-99A2-212EAC0CDDF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24A635F4-0FDA-4065-99A2-212EAC0CDDF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24A635F4-0FDA-4065-99A2-212EAC0CDDF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24A635F4-0FDA-4065-99A2-212EAC0CDDF1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
