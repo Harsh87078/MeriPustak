@@ -16,8 +16,8 @@ namespace MeriPustakWeb.Areas.Admin.Controllers
         }
         public IActionResult Index()
         {
-            List<Category> objcategories = _unitOfWork.Category.GetAll().ToList();
-            return View(objcategories);
+            List<Category   > objCategoryList = _unitOfWork.Category.GetAll().ToList();
+            return View(objCategoryList);
         }
 
         public IActionResult Create()
@@ -82,7 +82,7 @@ namespace MeriPustakWeb.Areas.Admin.Controllers
             return View(categoryFromDb);
         }
         [HttpPost, ActionName("Delete")]
-        public IActionResult DeletePost(int? id)
+        public IActionResult DeletePOST(int? id)
         {
             Category? obj = _unitOfWork.Category.Get(u => u.Id == id);
             if (obj == null)

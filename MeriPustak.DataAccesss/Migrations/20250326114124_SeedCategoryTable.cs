@@ -4,7 +4,7 @@
 
 #pragma warning disable CA1814 // Prefer jagged arrays over multidimensional
 
-namespace MeriPustak.DataAccess.Migrations
+namespace MeriPustak.DataAccesss.Migrations
 {
     /// <inheritdoc />
     public partial class SeedCategoryTable : Migration
